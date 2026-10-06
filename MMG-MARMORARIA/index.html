@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Catálogo digital MMG Marmoraria — pedras, mármores, quartzitos, superfícies de quartzo e cubas.">
+  <title>MMG Marmoraria | Catálogo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header" id="inicio">
+  <div class="container nav-wrap">
+    <a class="brand" href="#inicio" aria-label="MMG Marmoraria - início">
+      <img src="assets/logo.jpg" alt="MMG Marmoraria">
+      <span><strong>MMG</strong><small>MARMORARIA</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">☰</button>
+    <nav class="nav" id="nav">
+      <a href="#servicos">Serviços</a>
+      <a href="#modelos">Modelos</a>
+      <a href="#cores">Cores</a>
+      <a href="#orcamentos">Orçamentos</a>
+      <a href="#contatos">Contatos</a>
+    </nav>
+    <a class="nav-whatsapp" href="#" data-whatsapp="Olá! Gostaria de falar com a MMG Marmoraria.">WhatsApp</a>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow">CATÁLOGO DIGITAL • MMG MARMORARIA</span>
+      <h1>Escolha a pedra que combina com o seu <em>projeto.</em></h1>
+      <p>Explore modelos, compare cores e selecione seus favoritos. Depois, envie sua seleção diretamente pelo WhatsApp para solicitar seu orçamento.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#modelos">Explorar catálogo <span>→</span></a>
+        <a class="btn btn-outline" href="#orcamentos">Montar orçamento</a>
+      </div>
+      <div class="hero-points">
+        <span>✓ Pedras naturais</span><span>✓ Acabamentos</span><span>✓ Soluções sob medida</span>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="hero-card-image"></div>
+     <div class="hero-card-caption">
+  <img src="assets/imagem02.jpg" alt="Descrição da imagem" class="hero-card-thumb">
+  <span>SELEÇÃO MMG</span>
+  <strong>Seu ambiente começa na escolha da pedra.</strong>
+</div>
+  </div>
+</section>
+
+<section class="section intro" id="servicos">
+  <div class="container">
+    <div class="section-head">
+      <div><span class="eyebrow">SERVIÇOS</span><h2>Do material ao acabamento.</h2></div>
+      <p>O catálogo apresenta as opções disponíveis no material enviado pela MMG, organizadas para facilitar a escolha do cliente.</p>
+    </div>
+    <div class="service-grid">
+      <article><span>01</span><h3>Pedras e superfícies</h3><p>Granitos, mármores, quartzitos e superfícies de quartzo para diferentes estilos de projeto.</p></article>
+      <article><span>02</span><h3>Cubas</h3><p>Modelos esculpidos, de sobrepor e semi encaixe para complementar bancadas e lavabos.</p></article>
+      <article><span>03</span><h3>Outros</h3><p>Produtos complementares para integrar perfeitamente ao seu projeto.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section catalog" id="modelos">
+  <div class="container">
+    <div class="section-head catalog-head">
+      <div><span class="eyebrow">MODELOS</span><h2>Encontre o seu favorito.</h2></div>
+      <div class="selection-counter"><span id="selectedCount">0</span> selecionado(s)</div>
+    </div>
+    <div class="toolbar">
+      <div class="filters" id="categoryFilters">
+        <button class="filter active" data-category="Todos">Todos</button>
+        <button class="filter" data-category="Granitos">Granitos</button>
+        <button class="filter" data-category="Mármores">Mármores</button>
+        <button class="filter" data-category="Quartzitos">Quartzitos</button>
+        <button class="filter" data-category="Superfícies de Quartzo">Quartzo</button>
+        <button class="filter" data-category="Cubas">Cubas</button>
+      </div>
+      <label class="search"><span>⌕</span><input id="searchInput" type="search" placeholder="Buscar modelo..."></label>
+    </div>
+    <div class="catalog-grid" id="catalogGrid"></div>
+    <div class="empty" id="emptyState" hidden>Nenhum modelo encontrado. Tente outro nome ou categoria.</div>
+  </div>
+</section>
+
+<section class="section colors" id="cores">
+  <div class="container">
+    <div class="section-head"><div><span class="eyebrow">CORES</span><h2>Escolha pelo estilo.</h2></div><p>Use os grupos abaixo para navegar rapidamente pelo catálogo e encontrar tons que conversem com seu ambiente.</p></div>
+    <div class="color-guide">
+      <button data-color="escuro"><i class="swatch dark"></i><span>Escuros</span><small>Preto • grafite</small></button>
+      <button data-color="verde"><i class="swatch green"></i><span>Verdes</span><small>Ubatuba • Guatemala</small></button>
+      <button data-color="claro"><i class="swatch light"></i><span>Claros</span><small>Branco • bege</small></button>
+      <button data-color="neutro"><i class="swatch neutral"></i><span>Neutros</span><small>Cinza • marfim</small></button>
+    </div>
+  </div>
+</section>
+
+<section class="section quote" id="orcamentos">
+  <div class="container quote-box">
+    <div>
+      <span class="eyebrow">ORÇAMENTO</span>
+      <h2>Monte sua seleção e envie para a MMG.</h2>
+      <p>Marque os modelos que você gostou no catálogo. Ao clicar em “Enviar seleção”, o WhatsApp será aberto com os nomes escolhidos, prontos para você continuar o atendimento.</p>
+    </div>
+    <div class="quote-panel">
+      <div class="quote-list" id="quoteList"><p>Nenhum modelo selecionado ainda.</p></div>
+      <button class="btn btn-primary full" id="sendQuote">Enviar seleção pelo WhatsApp <span>↗</span></button>
+      <button class="clear" id="clearSelection">Limpar seleção</button>
+    </div>
+  </div>
+</section>
+
+<section class="section contact" id="contatos">
+  <div class="container contact-grid">
+    <div><span class="eyebrow">CONTATOS</span><h2>Vamos conversar sobre seu projeto?</h2><p>Entre em contato pelo WhatsApp para tirar dúvidas, enviar sua seleção e solicitar atendimento.</p></div>
+    <div class="contact-card">
+      <div><span>WhatsApp</span><strong>(61) 99992-3919</strong><small>Atendimento e orçamentos</small></div>
+      <a class="btn btn-primary" href="#" data-whatsapp="Olá! Vim pelo catálogo da MMG Marmoraria e gostaria de atendimento.">Falar no WhatsApp ↗</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="container footer-inner"><div class="brand footer-brand"><img src="assets/logo.jpg" alt=""><span><strong>MMG</strong><small>MARMORARIA</small></span></div><p>Catálogo digital MMG Marmoraria.</p></div></footer>
+
+<div class="modal" id="productModal" aria-hidden="true">
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-box">
+    <button class="modal-close" data-close aria-label="Fechar">×</button>
+    <img id="modalImage" src="" alt="">
+    <div class="modal-content"><span class="eyebrow" id="modalCategory"></span><h2 id="modalName"></h2><p id="modalDescription"></p><button id="modalSelect" class="btn btn-primary">Selecionar este modelo</button></div>
+  </div>
+</div>
+<script>window.MMG_PRODUCTS = [
+  {
+    "id": 1,
+    "category": "Granitos",
+    "name": "Preto São Gabriel",
+    "image": "assets/01-preto-sao-gabriel.jpg",
+    "description": "Granito de tom preto uniforme, elegante e versátil. Indicado para bancadas, lavatórios, pisos e revestimentos, com alta resistência, durabilidade e baixa porosidade."
+  },
+  {
+    "id": 2,
+    "category": "Granitos",
+    "name": "Preto São Gabriel Escovado",
+    "image": "assets/02-preto-sao-gabriel-escovado.jpg",
+    "description": "Acabamento escovado com aspecto levemente acetinado e texturizado. Indicado para bancadas, revestimentos de parede, painéis e pisos."
+  },
+  {
+    "id": 3,
+    "category": "Granitos",
+    "name": "Verde Ubatuba",
+    "image": "assets/03-verde-ubatuba.jpg",
+    "description": "Granito de fundo escuro com reflexos esverdeados e pontuações douradas. Muito utilizado em bancadas, lavatórios, mesas, escadas e pisos."
+  },
+  {
+    "id": 4,
+    "category": "Granitos",
+    "name": "Branco Siena",
+    "image": "assets/04-branco-siena.jpg",
+    "description": "Base clara com granulações em cinza e bege. Uma opção delicada e versátil para bancadas, lavatórios, pisos, soleiras e revestimentos."
+  },
+  {
+    "id": 5,
+    "category": "Granitos",
+    "name": "Ocre Itabira",
+    "image": "assets/05-ocre-itabira.jpg",
+    "description": "Tons quentes de bege, marrom e dourado que criam um visual acolhedor. Indicado para bancadas, lavatórios, escadas e pisos."
+  },
+  {
+    "id": 6,
+    "category": "Granitos",
+    "name": "Branco Pitaya",
+    "image": "assets/06-branco-pitaya.jpg",
+    "description": "Pedra de fundo claro com nuances em cinza e pontos sutis em preto. Versátil para bancadas, lavatórios, pisos e revestimentos."
+  },
+  {
+    "id": 7,
+    "category": "Granitos",
+    "name": "Corumbá",
+    "image": "assets/07-corumba.jpg",
+    "description": "Base clara em bege e marfim, com variações suaves em marrom e cinza. Muito utilizado em bancadas, lavatórios, pisos e revestimentos."
+  },
+  {
+    "id": 8,
+    "category": "Granitos",
+    "name": "Branco Dallas",
+    "image": "assets/08-branco-dallas.jpg",
+    "description": "Fundo branco com delicadas granulações em cinza e pontos sutis em preto e bege. Indicado para bancadas, lavatórios, pisos, escadas e revestimentos."
+  },
+  {
+    "id": 9,
+    "category": "Granitos",
+    "name": "Cinza Andorinha",
+    "image": "assets/09-cinza-andorinha.jpg",
+    "description": "Tom cinza uniforme com pequenas variações pontilhadas em preto e branco. Prático, discreto e elegante para bancadas, pisos, soleiras e escadas."
+  },
+  {
+    "id": 10,
+    "category": "Granitos",
+    "name": "Café Imperial",
+    "image": "assets/10-cafe-imperial.jpg",
+    "description": "Tonalidade marrom intensa com sutis variações em preto e dourado. Utilizado em bancadas, lavatórios, pisos, escadas e revestimentos."
+  },
+  {
+    "id": 11,
+    "category": "Mármores",
+    "name": "Bege Bahia ou Travertino",
+    "image": "assets/11-bege-bahia-ou-travertino.jpg",
+    "description": "Mármore de tonalidade bege clara, uniforme e aconchegante. Versátil para pisos, bancadas, escadas e revestimentos internos."
+  },
+  {
+    "id": 12,
+    "category": "Mármores",
+    "name": "Branco Nacional",
+    "image": "assets/12-branco-nacional.jpg",
+    "description": "Mármore de fundo branco com suaves veios acinzentados. Clássico, luminoso e versátil para pisos, paredes, escadas, bancadas e revestimentos."
+  },
+  {
+    "id": 13,
+    "category": "Quartzitos",
+    "name": "Branco Bianco",
+    "image": "assets/13-branco-bianco.jpg",
+    "description": "Quartzito de fundo branco luminoso com suaves variações em cinza e bege. Indicado para bancadas, ilhas, lavatórios, mesas e painéis."
+  },
+  {
+    "id": 14,
+    "category": "Quartzitos",
+    "name": "Branco Paraná",
+    "image": "assets/14-branco-parana.jpg",
+    "description": "Base clara em branco e bege suave, atravessada por veios marcantes em cinza e dourado. Indicado para bancadas, ilhas, lavatórios, mesas e painéis."
+  },
+  {
+    "id": 15,
+    "category": "Quartzitos",
+    "name": "Verde Guatemala",
+    "image": "assets/15-verde-guatemala.jpg",
+    "description": "Quartzito verde intenso com veios irregulares claros e escuros. Ideal para bancadas, lavatórios, mesas, painéis e revestimentos."
+  },
+  {
+    "id": 16,
+    "category": "Quartzitos",
+    "name": "Crema Marfil",
+    "image": "assets/16-crema-marfil.jpg",
+    "description": "Base bege clara com nuances sutis, transmitindo leveza e sofisticação. Utilizado em bancadas, lavatórios, mesas, painéis e revestimentos."
+  },
+  {
+    "id": 17,
+    "category": "Quartzitos",
+    "name": "Taj Mahal",
+    "image": "assets/17-taj-mahal.jpg",
+    "description": "Base clara em tons de bege perolado e nuances suaves. Muito utilizado em bancadas, ilhas, lavatórios, mesas e painéis, com alta resistência e baixa absorção."
+  },
+  {
+    "id": 18,
+    "category": "Quartzitos",
+    "name": "Kouros",
+    "image": "assets/18-kouros.jpg",
+    "description": "Base grafite a preta, com veios irregulares em cinza e branco. Indicado para bancadas, ilhas, mesas e painéis; combina com madeira e metais."
+  },
+  {
+    "id": 19,
+    "category": "Quartzitos",
+    "name": "Cristallo",
+    "image": "assets/19-cristallo.jpg",
+    "description": "Base translúcida em tons claros de branco e bege, com veios suaves. Adequado para bancadas, ilhas, mesas, lavatórios, painéis e revestimentos."
+  },
+  {
+    "id": 20,
+    "category": "Superfícies de Quartzo",
+    "name": "Cinza",
+    "image": "assets/20-cinza.jpg",
+    "description": "Superfície de quartzo em tonalidade neutra e versátil, indicada para bancadas, lavatórios, ilhas e áreas gourmet. Alta resistência e baixa porosidade."
+  },
+  {
+    "id": 21,
+    "category": "Superfícies de Quartzo",
+    "name": "Branco",
+    "image": "assets/21-branco.jpg",
+    "description": "Superfície de quartzo uniforme e clean, para bancadas, lavatórios, ilhas, mesas e painéis. Alta resistência, baixa porosidade e manutenção prática."
+  },
+  {
+    "id": 22,
+    "category": "Superfícies de Quartzo",
+    "name": "Calacata",
+    "image": "assets/22-calacata.jpg",
+    "description": "Superfície de quartzo inspirada no Calacatta, com fundo branco e veios marcantes em cinza. Indicada para bancadas, ilhas, lavatórios, painéis e mesas."
+  },
+  {
+    "id": 23,
+    "category": "Cubas",
+    "name": "Cuba Esculpida Quadrada",
+    "image": "assets/23-cuba-esculpida-quadrada.jpg",
+    "description": "Cuba produzida no mesmo material da bancada, com linhas retas e design minimalista. Indicada para lavatórios, banheiros e lavabos."
+  },
+  {
+    "id": 24,
+    "category": "Cubas",
+    "name": "Cuba de Sobrepor",
+    "image": "assets/24-cuba-de-sobrepor.jpg",
+    "description": "Cuba de linhas arredondadas e design atemporal, prática e versátil para banheiros e lavabos."
+  },
+  {
+    "id": 25,
+    "category": "Cubas",
+    "name": "Cuba Semi Encaixe",
+    "image": "assets/25-cuba-semi-encaixe.jpg",
+    "description": "Modelo que otimiza o espaço da bancada, com parte apoiada e parte embutida. Ideal para lavabos e banheiros compactos."
+  },
+  {
+    "id": 26,
+    "category": "Cubas",
+    "name": "Cuba Esculpida Rampa",
+    "image": "assets/26-cuba-esculpida-rampa.jpg",
+    "description": "Cuba esculpida diretamente na pedra, com forma inclinada que direciona a água. Design minimalista e sem emendas aparentes."
+  },
+];</script>
+<script src="js/script.js"></script>
+</body>
+</html>
